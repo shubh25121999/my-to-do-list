@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,
+        *:before,
+        *:after {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            background: #393934;
+        }
+
+        .container {
+            width: 40%;
+            top: 50%;
+            left: 50%;
+            background: rgb(58, 102, 246);
+            border-radius: 10px;
+            min-width: 450px;
+            position: absolute;
+            min-height: 100px;
+            transform: translate(-50%, -50%);
+        }
+
+        #tasks {
+            border-radius: 10px;
+            width: 100%;
+            position: relative;
+            background-color: #ffffff;
+            padding: 30px 20px;
+            margin-top: 10px;
+        }
+
+        .newtask {
+            border-radius: px;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid #939697;
+            cursor: pointer;
+            background-color: #c5e1e6;
+            height: 50px;
+            margin-bottom: 8px;
+            padding: 5px 10px;
+            display: flex;
+        }
+
+        #push {
+            padding: 10px 14px;
+        }
+
+        #textbox {
+            padding: 10px;
+            height: 35px;
+            width: 200px;
+        }
+
+        .warning {
+            border: 2px solid red;
+        }
+
+        #footer {
+            position: fixed;
+            left: 10px;
+            bottom: 5px;
+            right: 10px;
+            width: 95%;
+            background-color: gray;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="newtask">
+            <h1 style="color: rgb(255, 255, 255); text-align: center;"> My To Do List </h1>
+            <br>
+            <input id="textbox" type="text" placeholder="Add Tasks">
+
+            <button id="push"> Add </button>
+            <br>
+        </div>
+        <div id="tasks"></div>
+    </div>
+    <footer id="footer">This project is made by Ashutosh kumar singh</footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
