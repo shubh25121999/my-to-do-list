@@ -1,4 +1,4 @@
-var arr=["hi jaanu i love you"]
+var arr=["haare gand mar denge"]
 /*here i have imported the add button*/
 var add=document.getElementById("push") 
 
