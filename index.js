@@ -42,7 +42,12 @@ if(todos)
 
 /*here i have added event listener in the add button*/
 add.addEventListener("click",effect)
-
+inputBox.addEventListener("keyup",function(event){
+    if(event.which===13)
+    {
+        effect();
+    }
+})
 /* effect function which i have passed in the event listener of add button*/
 function effect()
 {
